@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url('../assets/fonts/static/Inter-Bold.ttf'), 
+    url('../assets/fonts/static/Inter-ExtraBold.ttf'),
+    url('../assets/fonts/static/Inter-Regular.ttf');
+}
 
 body {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inte', sans-serif;
+  font-size: 15px;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
@@ -21,7 +27,7 @@ a {
 .main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
   padding: 5% 10%;
 }
 
@@ -35,11 +41,17 @@ a {
 .right-nav {
   display: flex;
   gap: 30px;
+  font-size: 20px;
 }
 
 .right-nav > li > a {
   color: hsl(236, 13%, 42%);
 }
+
+.right-nav > li > a:active {
+  color: hsl(5, 85%, 63%);
+}
+
 
 /* mid-section */
 
@@ -53,7 +65,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 95%;
+  width: 100%;
 }
 
 .left-mid > img {
@@ -69,6 +81,7 @@ a {
 .left-mid-bottom > h2 {
   color: hsl(240, 100%, 5%);
   font-size: 46px;
+  font-weight: 700;
 }
 
 .left-mid-bottom > div {
@@ -97,7 +110,7 @@ a {
   gap: 10px;
   background: hsl(240, 100%, 5%);;
   color: hsl(36, 100%, 99%);
-  padding: 20px 15px;
+  padding: 20px;
 }
 
 .right-mid > h2 {
@@ -120,4 +133,48 @@ a {
 .card > p {
   line-height: 25px;
   color: hsl(233, 8%, 79%);
+}
+
+/* bottom-section */
+
+.bottom-section {
+  display: flex;
+  gap: 40px;
+}
+
+.bottom-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.bottom-card > img {
+  width: 100px;
+  height: auto;
+}
+
+.bottom-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bottom-card-info > h3 {
+  color: hsl(233, 8%, 79%);
+  font-size: 36px;
+}
+
+.bottom-card-info > a {
+  color: hsl(240, 100%, 5%);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bottom-card-info > a:active {
+  color: hsl(5, 85%, 63%);
+}
+
+.bottom-card-info > p {
+  color: hsl(236, 13%, 42%);
+  line-height: 25px;
 }
