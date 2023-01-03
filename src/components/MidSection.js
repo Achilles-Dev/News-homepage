@@ -1,10 +1,12 @@
 import React from 'react';
 import Web3Desktop from '../../assets/images/image-web-3-desktop.jpg'
+import Web3Mobile from '../../assets/images/image-web-3-mobile.jpg'
 
 const MidSection = () => (
   <section className='main-mid'>
     <div className='left-mid'>
-      <img src={Web3Desktop} alt='Web-3' />
+      <img className="desktop-image" src={Web3Desktop} alt='Web-3' />
+      <img className="mobile-image" src={Web3Mobile} alt='Web-3' />
       <div className='left-mid-bottom'>
         <h2>The Bright Future of Web 3.0?</h2>
         <div>
