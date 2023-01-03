@@ -11,7 +11,7 @@ body {
   font-size: 15px;
 }
 
-body, h1, h2, h3, h4, h5, h6, p {
+body, h1, h2, h3, h4, h5, h6, p, ul {
   padding: 0;
   margin: 0;
 }
@@ -44,11 +44,17 @@ a {
   font-size: 20px;
 }
 
+.menu-icon,
+.mobile-menu {
+  display: none;
+}
+
 .right-nav > li > a {
   color: hsl(236, 13%, 42%);
 }
 
-.right-nav > li > a:active {
+.right-nav > li > a:active,
+.right-nav > li > a:hover {
   color: hsl(5, 85%, 63%);
 }
 
@@ -170,11 +176,68 @@ a {
   font-weight: 700;
 }
 
-.bottom-card-info > a:active {
+.bottom-card-info > a:active,
+.bottom-card-info > a:hover {
   color: hsl(5, 85%, 63%);
 }
 
 .bottom-card-info > p {
   color: hsl(236, 13%, 42%);
   line-height: 25px;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    padding: 7% 5%;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(36, 100%, 99%);
+    border: none; 
+  }
+
+  .mobile-menu.active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    gap: 70px;
+    z-index: 10;
+    background: hsl(36, 100%, 99%);
+  }
+
+  .mobile-menu > .close-icon {
+    display: flex;
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .menu-links > li > a {
+    color: hsl(240, 100%, 5%);
+    font-size: 18px;
+  }
 }
