@@ -1,6 +1,6 @@
 {
   "name": "news-homepage-main",
-  "homepage": "https://achilles-dev.github.io/News-homepage/",
+  "homepage": "https://achilles-dev.github.io/News-homepage/dist",
   "version": "1.0.0",
   "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
   "main": "src/index.js",
