@@ -247,6 +247,11 @@ a {
     font-size: 18px;
   }
 
+  .menu-links > li > a:active,
+  .menu-links > li > a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+
   /* mid-section */
 
   .main-mid {
