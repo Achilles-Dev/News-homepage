@@ -276,4 +276,18 @@ a {
     gap: 20px;
     margin-left: 0;
   }
+
+  /* bottom-section */
+
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .bottom-card-info > h3 {
+    font-size: 30px;
+  }
+
+  .bottom-card-info > a {
+    font-size: 18px;
+  }
 }
